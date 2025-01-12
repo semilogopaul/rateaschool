@@ -66,18 +66,21 @@ const Login: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700"
+          className="w-full bg-green-600 text-white p-2 rounded duration-200 hover:bg-green-700"
         >
           Login
         </button>
       </form>
       <div className="mt-4 flex justify-between items-center">
-        <Link to="/signup" className="text-blue-500 hover:underline text-sm">
+        <Link
+          to="/signup"
+          className="text-blue-500 duration-200 hover:underline text-sm"
+        >
           Don't have an account? Sign up
         </Link>
         <Link
           to="/forgot-password"
-          className="text-blue-500 hover:underline text-sm"
+          className="text-blue-500 duration-200 hover:underline text-sm"
         >
           Forgot Password?
         </Link>

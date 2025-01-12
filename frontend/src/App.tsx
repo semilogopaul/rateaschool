@@ -4,6 +4,7 @@ import SignupPage from "./pages/SignupPage";
 import LandingPage from "./pages/LandingPage";
 import Header from "./components/Header";
 import LoginPage from "./pages/LoginPage";
+import LogoutPage from "./pages/LogoutPage";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import VerifyEmail from "./pages/VerifyEmail";
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/logout" element={<LogoutPage />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/verify-email" element={<VerifyEmail />} />

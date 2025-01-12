@@ -3,20 +3,24 @@ import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-green-600 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">
-          <Link to="/">School Review App</Link>
-        </h1>
-        <nav>
-          <Link to="/signup" className="px-4 hover:underline">
-            Sign Up
-          </Link>
-          <Link to="/login" className="px-4 hover:underline">
-            Log In
-          </Link>
-        </nav>
-      </div>
+    <header className="w-full px-4 flex justify-between items-center py-4">
+      <Link to="/dashboard">
+        <img src="\rate.svg" alt="RateASchool" className="h-12" />
+      </Link>
+      <nav>
+        <Link
+          to="/logout"
+          className="text-green-600 mr-4 rounded-full border border-green-600 duration-200 hover:bg-slate-50 px-4 py-2 duration-200"
+        >
+          Logout
+        </Link>
+        <Link
+          to="/users/profile"
+          className="text-white rounded-full bg-green-600 duration-200 hover:bg-green-700 px-4 py-2 duration-200"
+        >
+          Profile
+        </Link>
+      </nav>
     </header>
   );
 };

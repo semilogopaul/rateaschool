@@ -56,7 +56,7 @@ const ResetPassword: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700"
+          className="w-full bg-green-600 text-white p-2 rounded duration-200 hover:bg-green-700"
         >
           Reset Password
         </button>

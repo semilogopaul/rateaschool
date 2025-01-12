@@ -63,10 +63,10 @@ class RequestPasswordResetView(APIView):
             email_body = f"Hi {user.first_name},\nUse the link below to reset your password:\n{reset_link}"
             
             send_mail(
-                'Password Reset Request',
-                email_body,
-                'noreply@example.com',
-                [user.email],
+                subject='Password Reset Request',
+                message=email_body,
+                from_email='noreply@demomailtrap.com',
+                recipient_list=[user.email],
             )
             return Response({"message": "Password reset link sent to your email."}, status=status.HTTP_200_OK)
         except User.DoesNotExist:

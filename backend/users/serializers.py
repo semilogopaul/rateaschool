@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
+from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.core.mail import send_mail
 from itsdangerous import URLSafeTimedSerializer
@@ -9,6 +10,7 @@ from django.conf import settings
 User = get_user_model()
 
 class RegisterSerializer(serializers.ModelSerializer):
+    permission_classes = [AllowAny]
     username = serializers.CharField(required=True)  # Add username field
     password = serializers.CharField(write_only=True, validators=[validate_password])
     confirm_password = serializers.CharField(write_only=True)
@@ -37,9 +39,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         email_body = f"Hi {user.first_name},\nUse the link below to verify your email:\n{absurl}"
         send_mail(
             'Verify your email',
-            email_body,
-            'noreply@example.com',
-            [user.email],
+             message=email_body,
+                from_email='okiki.adeogun@gmail.com',
+                recipient_list=[user.email],
         )
         return user
 

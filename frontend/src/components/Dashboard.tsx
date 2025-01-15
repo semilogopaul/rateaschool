@@ -65,7 +65,7 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {schools.map((school) => (
           <Link key={school.id} to={`/schools/${school.id}`}>
-            <div className="flex flex-col border p-4 rounded shadow duration-200 hover:shadow-lg transition duration-500 h-full">
+            <div className="flex flex-col border p-4 rounded shadow hover:shadow-lg transition duration-500 h-full">
               <img
                 src={school.image}
                 alt={school.name}

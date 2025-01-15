@@ -9,13 +9,13 @@ const LandingPage: React.FC = () => {
         <nav>
           <Link
             to="/login"
-            className="text-green-600 mr-4 rounded-full border border-green-600 duration-200 hover:bg-slate-50 px-4 py-2 duration-200"
+            className="text-green-600 mr-4 rounded-full border border-green-600 hover:bg-slate-50 px-4 py-2 duration-200"
           >
             Login
           </Link>
           <Link
-            to="/register"
-            className="text-white rounded-full bg-green-600 duration-200 hover:bg-green-700 px-4 py-2 duration-200"
+            to="/signup"
+            className="text-white rounded-full bg-green-600 hover:bg-green-700 px-4 py-2 duration-200"
           >
             Register
           </Link>
@@ -30,8 +30,8 @@ const LandingPage: React.FC = () => {
           informed decisions.
         </p>
         <Link
-          to="/register"
-          className="text-white rounded-full bg-green-600 duration-200 hover:bg-green-700 px-5 py-3 duration-200"
+          to="/signup"
+          className="text-white rounded-full bg-green-600 hover:bg-green-700 px-5 py-3 duration-200"
         >
           Get Started
         </Link>

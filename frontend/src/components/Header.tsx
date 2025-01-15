@@ -10,13 +10,19 @@ const Header: React.FC = () => {
       <nav>
         <Link
           to="/logout"
-          className="text-green-600 mr-4 rounded-full border border-green-600 duration-200 hover:bg-slate-50 px-4 py-2 duration-200"
+          className="text-green-600 mr-4 rounded-full border border-green-600 hover:bg-slate-50 px-4 py-2 duration-200"
+        >
+          Add School
+        </Link>
+        <Link
+          to="/logout"
+          className="text-green-600 mr-4 rounded-full border border-green-600 hover:bg-slate-50 px-4 py-2 duration-200"
         >
           Logout
         </Link>
         <Link
           to="/users/profile"
-          className="text-white rounded-full bg-green-600 duration-200 hover:bg-green-700 px-4 py-2 duration-200"
+          className="text-white rounded-full bg-green-600 hover:bg-green-700 px-6 py-2 duration-200"
         >
           Profile
         </Link>

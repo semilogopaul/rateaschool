@@ -38,7 +38,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-xl w-80 mx-auto mt-10 p-6  shadow-md rounded-lg bg-white">
       <h2 className="text-2xl font-bold mb-6">Login</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       <form onSubmit={handleSubmit}>
@@ -72,17 +72,8 @@ const Login: React.FC = () => {
         </button>
       </form>
       <div className="mt-4 flex justify-between items-center">
-        <Link
-          to="/signup"
-          className="text-blue-500 duration-200 hover:underline text-sm"
-        >
+        <Link to="/signup" className="text-green-500 text-sm">
           Don't have an account? Sign up
-        </Link>
-        <Link
-          to="/forgot-password"
-          className="text-blue-500 duration-200 hover:underline text-sm"
-        >
-          Forgot Password?
         </Link>
       </div>
     </div>

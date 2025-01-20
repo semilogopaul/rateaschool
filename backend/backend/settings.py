@@ -135,6 +135,13 @@ SIMPLE_JWT = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'  # Console backend doesn't use an external SMTP server
+EMAIL_PORT = 1025  # Default port for console backend
+EMAIL_USE_TLS = False  # TLS is not used for console backend
+EMAIL_HOST_USER = ''  # No need for an email address
+EMAIL_HOST_PASSWORD = ''  # No need for a password
+
 
 
 # Internationalization

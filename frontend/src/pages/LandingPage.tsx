@@ -31,7 +31,7 @@ const LandingPage: React.FC = () => {
         </p>
         <Link
           to="/signup"
-          className="text-white rounded-full bg-green-600 hover:bg-green-700 px-5 py-3 duration-200"
+          className="text-white rounded-full bg-green-600 hover:bg-green-700 px-7 py-2 duration-200"
         >
           Get Started
         </Link>

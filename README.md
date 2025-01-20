@@ -36,7 +36,7 @@ A web application designed to allow users to rate schools and share their experi
 - **Django**: Backend framework.
 - **Django REST Framework**: For building REST APIs.
 - **JWT Authentication**: Secure token-based authentication.
-- **SQLite**: Default database for local development.
+- **SQLite**: Database.
 
 ### Frontend
 
@@ -51,8 +51,8 @@ A web application designed to allow users to rate schools and share their experi
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/school-rating-platform.git
-cd school-rating-platform
+git clone https://github.com/semilogopaul/rateaschool.git
+cd rateaschool
 ```
 
 ### Set up the backend

@@ -1,7 +1,10 @@
 # School Rating and Review Platform
 
 A web application designed to allow users to rate schools and share their experiences, promoting transparency and informed decision-making for parents and guardians. The platform addresses critical issues such as bullying and poor school quality by providing a space for community-driven feedback.
+
+---
 <img src="./Rate-a-school.png" alt="School Rating Platform" style="width: 50%"/>
+
 
 ---
 
@@ -36,7 +39,7 @@ A web application designed to allow users to rate schools and share their experi
 - **Django**: Backend framework.
 - **Django REST Framework**: For building REST APIs.
 - **JWT Authentication**: Secure token-based authentication.
-- **SQLite**: Default database for local development.
+- **SQLite**: Database.
 
 ### Frontend
 
@@ -51,8 +54,8 @@ A web application designed to allow users to rate schools and share their experi
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/school-rating-platform.git
-cd school-rating-platform
+git clone https://github.com/semilogopaul/rateaschool.git
+cd rateaschool
 ```
 
 ### Set up the backend

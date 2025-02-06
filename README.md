@@ -1,6 +1,6 @@
 # School Rating and Review Platform
 
-A web application designed to allow users to rate schools and share their experiences, promoting transparency and informed decision-making for parents and guardians. The platform addresses critical issues such as bullying and poor school quality by providing a space for community-driven feedback.
+A web application that allows users to rate schools and share their experiences, utilizes AI-driven feedback to help schools identify areas for improvement and enhance customer satisfaction, promoting transparency and informed decision-making for parents and guardians. The platform addresses critical issues such as bullying and poor school quality by providing a space for community-driven feedback.
 
 ---
 <img src="./Rate-a-school.png" alt="School Rating Platform" style="width: 50%"/>
